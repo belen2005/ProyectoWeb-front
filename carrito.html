@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="CSS/styls.css">
+</head>
+<body>
+
+  <header class="menu">
+    <div class="logo">
+        <a href="home.html">
+            <img src="img/logo brava.png" alt="Brava">
+        </a>
+    </div>
+    <nav class="navigation">
+        <a href="productos.html">TIENDA</a>
+        <a href="sobreNosotros.html">SOBRE NOSOTROS</a>
+        <a href="reservas.html">RESERVAR</a>
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+    <div class="cart">
+        <a href="carrito.html">
+            <img src="img/Vector.png" alt="Carrito">
+        </a>
+    </div>
+</header>
+
+<main>
+  <div id="contenedor-carrito"></div>
+  <div class="botones-carrito">
+      <button id="vaciar-carrito" class="btn-carrito">Vaciar carrito</button>
+     
+      <a href="finalizarCompra.html">
+        <button id="finalizar-compra" class="btn-carrito">Finalizar compra</button>
+    </a>
+  </div>
+</main>
+
+<!-- Modal -->
+<div id="popup" class="popup">
+  <div class="popup-contenido">
+      <p>Tu carrito está vacío.</p>
+      <a href="home.html">
+        <button id="volver-inicio" class="btn-carrito">Volver al inicio</button>
+    </a>
+     
+  </div>
+</div>
+
+<footer>
+    <div>
+        <a href="home.html">
+            <img src="img/logo brava.png" alt="Brava" class="logo">
+        </a>
+    </div>
+    <div>
+        <p>Pta.Carretas|M a D 8 a 20 h</p>
+        <p>Parque Rodó|M a S 9 a 19 h D 9 a 17</p>
+        <p>Aerop.de Carrasco</p>
+    </div>
+    <div class="social-icons">
+        <img src="img/icono-facebook.png" alt="Facebook">
+        <img src="img/icono-instagram.png" alt="Instagram">
+    </div>
+    </footer>
+<!-- <script type="module" src="JS/carrito.js"></script> -->
+<script type="module" src="JS/carrito.js"></script>
+</body>
+</html>

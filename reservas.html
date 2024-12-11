@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar</title>
+    <link rel="stylesheet" href="CSS/styls.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo brava.png" alt="Brava">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="productos.html">TIENDA</a>
+            <a href="sobreNosotros.html">SOBRE NOSOTROS</a>
+            <a href="reservas.html">RESERVAR</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+        <div class="cart">
+            <a href="carrito.html">
+                <img src="img/Vector.png" alt="Carrito">
+            </a>
+        </div>
+    </header>
+    <h1>Hacer una Reserva</h1>
+    <form id="form-reserva">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="hora">Hora:</label>
+        <select id="hora" required>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+        </select>
+
+        <label for="personas">Número de personas:</label>
+        <input type="number" id="personas" required>
+
+        <button type="button" id="form-reserva-submit">Reservar</button>
+    </form>
+
+    <div id="form-reserva-error"></div>
+    <div id="form-reserva-success"></div>
+
+    <!-- Modal de Disponibilidad -->
+    <div id="modal-disponibilidad">
+        <div id="modal-content">
+            <p id="modal-mensaje"></p>
+            <button id="confirmar-reserva">Confirmar Reserva</button>
+            <button id="cancelar-reserva">Cancelar</button>
+        </div>
+    </div>
+    <footer>
+
+        <div>
+            <a href="home.html">
+                <img src="img/logo brava.png" alt="Brava" class="logo">
+            </a>
+        </div>
+        <div>
+            <p>Pta.Carretas|M a D 8 a 20 h</p>
+            <p> Parque Rodó|M a S 9 a 19 h D 9 a 17</p>
+            <p> Aerop.de Carrasco</p>
+        </div>
+        <div class="social-icons">
+            <img src="img/icono-facebook.png" alt="Facebook">
+            <img src="img/icono-instagram.png" alt="Instagram">
+        </div>
+    </footer>
+    <script type="module" src="JS/reserva.js"></script>
+</body>
+
+</html>

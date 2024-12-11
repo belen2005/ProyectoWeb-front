@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styls.css">
+    <title>Detalle Producto</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo brava.png" alt="Brava">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="productos.html">TIENDA</a>
+            <a href="sobreNosotros.html">SOBRE NOSOTROS</a>
+            <a href="reservas.html">RESERVAR</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+        <div class="cart">
+            <a href="carrito.html">
+                <img src="img/Vector.png" alt="Carrito">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div id="detalleProducto1"></div>
+        <div id="detalle-error" class="error"></div>
+        <section id="productosSimilares">
+          <h2>Productos similares</h2>
+          <div id="similares-lista"></div>
+        </section>
+      </main>
+      
+      <div id="modal-carrito" class="modal">
+        <div class="modal-content">
+          <p>Agregado a tu carrito :)</p>
+          <div class="modal-buttons">
+            <button id="seguir-comprando">Seguir comprando</button>
+            <button id="ver-carrito">Ver carrito</button>
+          </div>
+        </div>
+      </div>
+    <script type="module" src="JS/ampliacionProductos.js"></script>
+</body>
+
+</html>

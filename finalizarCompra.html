@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalización de Compra</title>
+  <link rel="stylesheet" href="CSS/styls.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo brava.png" alt="Brava">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="productos.html">TIENDA</a>
+            <a href="sobreNosotros.html">SOBRE NOSOTROS</a>
+            <a href="reservas.html">RESERVAR</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+        <div class="cart">
+            <a href="carrito.html">
+                <img src="img/Vector.png" alt="Carrito">
+            </a>
+        </div>
+    </header>
+    <div class="form-container">
+      <h1>Datos personales</h1>
+      <p>Envíos únicamente dentro de Montevideo</p>
+      <form id="checkout-form" action="#popup" method="get">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="direccion" placeholder="Dirección" required>
+        <input type="text" id="numero-puerta" placeholder="Número de puerta" required>
+        <label>
+          <input type="checkbox" id="retiro-local"> Retiro en Local
+        </label>
+        <div class="payment-info">
+          <h2>Datos de tarjeta</h2>
+          <input type="text" id="tarjeta" placeholder="Número de tarjeta" required>
+          <input type="text" id="expiracion" placeholder="MM/AA" required>
+          <input type="text" id="cvc" placeholder="CVC" required>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    
+    <!-- Popup de confirmación -->
+    <div id="popup" class="popup">
+      <div class="popup-contenido">
+        <p>¡Gracias por tu compra! Te enviaremos los detalles por correo electrónico.</p>
+        <a href="home.html" id="volver-inicio">Volver al inicio</a>
+      </div>
+    </div>
+    
+      <footer>
+
+        <div>
+            <a href="home.html">
+                <img src="img/logo brava.png" alt="Brava" class="logo">
+            </a>
+        </div>
+        <div>
+            <p>Pta.Carretas|M a D 8 a 20 h</p>
+            <p> Parque Rodó|M a S 9 a 19 h D 9 a 17</p>
+            <p> Aerop.de Carrasco</p>
+        </div>
+        <div class="social-icons">
+            <img src="img/icono-facebook.png" alt="Facebook">
+            <img src="img/icono-instagram.png" alt="Instagram">
+        </div>
+    </footer>
+  <script src="JS/finalizarCompra.js"></script>
+</body>
+</html>

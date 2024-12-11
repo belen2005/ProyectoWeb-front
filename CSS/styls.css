@@ -1,0 +1,778 @@
+/* body {
+    font-family: Arial, sans-serif;
+  } */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0A0A0A;
+  }
+ h1, h2, h3, p{
+    color: white;
+
+ }
+
+/* footer */
+.logo {
+  width: 200px;
+}
+
+/* Estilos del pie de página */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+footer p {
+  color: #a9a9a9;
+}
+
+.social-icons img {
+  width: 38px;
+  margin: 0 10px;
+}
+
+.hero {
+  background-image: url(/img/banners.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.189);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: #ffffff;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+h2{
+  display: flex
+  ;
+      justify-content: center;
+      padding: 20px;
+}
+
+
+
+
+
+         /* Estilos para el formulario */
+         form {
+          max-width: 400px;
+          margin: auto;
+        
+      }
+
+      label {
+          display: block;
+          margin-top: 10px;
+      }
+
+      input, button {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border-radius: 5px;
+          border: 1px solid #ddd;
+      }
+
+      button {
+          background-color: #4CAF50;
+          color: white;
+          cursor: pointer;
+          border: none;
+      }
+
+      button:hover {
+          background-color: #45a049;
+      }
+
+      /* Estilos para el mensaje de error y éxito */
+      #form-reserva-error {
+          color: red;
+          text-align: center;
+          margin-top: 10px;
+      }
+
+      #form-reserva-success {
+          color: green;
+          text-align: center;
+          margin-top: 10px;
+      }
+
+      /* Estilos para el modal de disponibilidad */
+      #modal-disponibilidad {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: none;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+      }
+
+      #modal-content {
+          background-color: white;
+          padding: 20px;
+          border-radius: 8px;
+          text-align: center;
+          width: 300px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      #modal-content p {
+          margin-bottom: 20px;
+      }
+
+      #confirmar-reserva, #cancelar-reserva {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      #confirmar-reserva {
+          background-color: #404040;
+          color: white;
+          margin-right: 10px;
+      }
+
+      #cancelar-reserva {
+          background-color: #000000;
+          color: white;
+      }
+
+
+
+
+
+
+
+
+
+      /* MENU ESTILOS */
+
+    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #111;
+        padding: 20px;
+    } 
+  
+    
+    .navigation {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .navigation a {
+        color: #fff;
+        
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .cart img {
+        width: 24px; /* Ajusta el tamaño del ícono del carrito */
+        color: white;
+    }
+    
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+.menu .logo img {
+    width: 125px;
+height: 61px;
+
+}
+
+
+.navigation a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+
+
+/* Estilos del encabezado */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #e9e9e9;
+    margin: 20px 0;
+}
+
+.cart img {
+  height: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+
+
+.producto img {
+  width: 100%;
+  height: 300px; /* Tamaño fijo para todas las imágenes */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsión */
+  border-radius: 8px;
+}
+
+.producto h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.producto p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.producto button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+
+
+@media (max-width: 768px) { /* Estilos para pantallas pequeñas, como móviles */
+  .producto img {
+    height: 150px; /* Ajuste del tamaño de las imágenes en móviles */
+  }
+
+  .productos-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Ajuste del tamaño de las letras del título en móviles */
+  }
+
+  .producto h2 {
+    font-size: 1rem; /* Ajuste del tamaño de los subtítulos de productos */
+  }
+
+  .producto p {
+    font-size: 0.9rem; /* Ajuste del tamaño de la descripción en productos */
+  }
+
+  .producto button {
+    font-size: 0.9rem; /* Ajuste del tamaño de la fuente en el botón */
+  }
+
+  .social-icons img {
+    height: 18px; /* Ajuste del tamaño de los iconos sociales */
+  }
+}
+
+
+/* ampliacion producto */
+.detalleProducto {
+  display: flex;
+  
+}
+  #detalleProducto1 img {
+    width: 50%;
+    height: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  #detalleProducto1 .info-producto {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  #detalleProducto .info-producto h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  #detalleProducto .info-producto p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  #detalleProducto .info-producto .precio {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cantidad input {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .boton-agregar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .boton-agregar:hover {
+    background-color: #444;
+  }
+  
+  /* Mensaje de error */
+  .error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+  .modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .modal-content p{
+   color: #000;
+  }
+  
+  .modal-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .modal-buttons button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons button:hover {
+    background-color: #555;
+  }
+
+
+
+/* CARRITO */
+
+
+
+main {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+}
+
+#contenedor-carrito {
+  margin-bottom: 20px;
+}
+
+.producto-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.producto-carrito img {
+  max-width: 60px;
+  margin-right: 20px;
+}
+
+.producto-carrito h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.producto-carrito p {
+  margin: 5px 0;
+}
+
+.eliminar-producto {
+  width: 10%;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button {
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #333;
+}
+/* Estilos del contenedor del formulario */
+/* .form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+} */
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+label {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2C2C2C;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.payment-info {
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.payment-info h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Estilos del popup */
+.popup {
+  display: none; /* Ocultar el popup por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popup:target {
+  display: flex; /* Mostrar el popup cuando se activa el target */
+}
+
+.popup p {
+  color: #000;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.popup-contenido {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#volver-inicio {
+  margin-top: 10px;
+  padding: 0.8rem 1.5rem;
+  background-color:#2C2C2C;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#volver-inicio:hover {
+  background-color: #000000;
+}
+
+/* Responsivo para dispositivos móviles */
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .productos-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
+  .producto {
+    width: 100%;
+    height: auto;
+  }
+
+  .detalleProducto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #detalleProducto img {
+    width: 80%;
+    height: auto;
+  }
+
+  #detalleProducto .info-producto {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  #detalleProducto .info-producto h1 {
+    font-size: 20px;
+  }
+
+  .cantidad input {
+    width: 40px;
+  }
+
+  .boton-agregar {
+    padding: 10px 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .producto h2 {
+    font-size: 16px;
+  }
+
+  .producto p {
+    font-size: 14px;
+  }
+
+  .producto button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .detalleProducto {
+    padding: 10px;
+  }
+
+  #detalleProducto .info-producto h1 {
+    font-size: 18px;
+  }
+
+  .boton-agregar {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+.productos-destacados {
+  padding: 2rem;
+}
+
+.productos-lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.producto img {
+  width: 100%;
+  height: 300px; /* Tamaño fijo para todas las imágenes */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsión */
+  border-radius: 8px;
+}
+
+.producto h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.producto p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.producto button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+
+
+.detalleProducto img{
+  width: 100%;
+  height: 300px; /* Tamaño fijo para todas las imágenes */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsión */
+  border-radius: 8px;
+
+}
+
+
+
+
+
