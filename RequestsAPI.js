@@ -5,7 +5,7 @@ const headers = {
 };
 
 export class RequestsAPI {
-  static urlBaseBackend = "http://localhost:4000";
+  static urlBaseBackend = "https://proyectoweb-t5bp.onrender.com";
 
   static verificarDisponibilidad({ fecha, hora, personas }) {
     const body = JSON.stringify({ fecha, hora, personas });
