@@ -299,33 +299,29 @@ h1 {
 
 
 
-@media (max-width: 768px) { /* Estilos para pantallas pequeñas, como móviles */
+@media (max-width: 768px) {
   .producto img {
-    height: 150px; /* Ajuste del tamaño de las imágenes en móviles */
+    height: 150px;
   }
 
   .productos-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   h1 {
-    font-size: 1.5rem; /* Ajuste del tamaño de las letras del título en móviles */
+    font-size: 1.5rem;
   }
 
   .producto h2 {
-    font-size: 1rem; /* Ajuste del tamaño de los subtítulos de productos */
+    font-size: 1rem;
   }
 
   .producto p {
-    font-size: 0.9rem; /* Ajuste del tamaño de la descripción en productos */
+    font-size: 0.9rem;
   }
 
   .producto button {
-    font-size: 0.9rem; /* Ajuste del tamaño de la fuente en el botón */
-  }
-
-  .social-icons img {
-    height: 18px; /* Ajuste del tamaño de los iconos sociales */
+    font-size: 0.9rem;
   }
 }
 
@@ -398,13 +394,13 @@ h1 {
 
 
   .modal {
-    display: none; /* Ocultar el modal por defecto */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -507,14 +503,10 @@ button:hover {
   background-color: #333;
 }
 /* Estilos del contenedor del formulario */
-/* .form-container {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-} */
+ .form-container p {
+ display: flex;
+ justify-content: center;
+}
 
 h1 {
   text-align: center;
@@ -579,7 +571,7 @@ input[type="checkbox"] {
 
 /* Estilos del popup */
 .popup {
-  display: none; /* Ocultar el popup por defecto */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -684,8 +676,6 @@ input[type="checkbox"] {
   footer p {
     font-size: 14px;
   }
-
-  
 }
 
 /* Estilos para pantallas más pequeñas */
@@ -763,13 +753,95 @@ input[type="checkbox"] {
 }
 
 
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .productos-lista {
+    grid-template-columns: none; /* Quita las columnas */
+    display: flex; /* Cambia a diseño flexible */
+    overflow-x: scroll; /* Permite desplazamiento horizontal */
+    gap: 1rem; /* Espaciado entre productos */
+  }
 
-.detalleProducto img{
-  width: 100%;
-  height: 300px; /* Tamaño fijo para todas las imágenes */
-  object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsión */
-  border-radius: 8px;
+  .producto {
+    flex: 0 0 auto; /* No permite que los productos se reduzcan o expandan */
+    width: 80%; /* Cada producto ocupa el 80% del ancho del viewport */
+  }
 
+  .producto img {
+    height: 200px; /* Reduce el tamaño de las imágenes */
+  }
+
+  .producto h2 {
+    font-size: 1rem; /* Ajusta el tamaño de los títulos */
+  }
+
+  .producto p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .producto button {
+    padding: 0.4rem 0.8rem; /* Botones más pequeños */
+  }
+}
+
+
+
+/* Estilo general de la sección */
+.masa-madre {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  text-align: center; /* Texto centrado */
+  padding: 50px 20px; /* Espaciado interno */
+  font-family: 'Inter', sans-serif; /* Tipografía general */
+}
+
+.masa-madre h2 {
+  font-size: 36px; /* Tamaño del título */
+
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.masa-madre-contenido {
+  display: flex; /* Contenedor flexible */
+  flex-wrap: wrap; /* Adaptable para pantallas pequeñas */
+  justify-content: center; /* Centrado horizontal */
+  gap: 30px; /* Espaciado entre elementos */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.masa-madre-item {
+  background-color: #111; /* Fondo más claro */
+  border: 1px solid #333; /* Borde sutil */
+  padding: 20px; /* Espaciado interno */
+  width: 250px; /* Ancho fijo de cada tarjeta */
+  text-align: center; /* Centrado del texto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+  flex: 1 1 250px; /* Adaptable en pantallas pequeñas */
+}
+
+.masa-madre-item h3 {
+  font-size: 20px; /* Tamaño del subtítulo */
+  margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.masa-madre-item p {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Altura de línea */
+  margin: 0;
+}
+
+.masa-madre-imagen {
+  flex-basis: 100%; /* Ocupar todo el ancho */
+  text-align: center; /* Centrado de la imagen */
+}
+
+.masa-madre-imagen img {
+  max-width: 300px; /* Ancho máximo de la imagen */
+  height: auto; /* Mantiene proporciones */
+  margin: 20px auto; /* Espaciado y centrado */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Sombra */
 }
 
 

@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styls.css">
     <title>Sobre Nosotros</title>
 </head>
+<style>
+    .hero {
+        position: relative;
+        text-align: center;
+        background: url('/img/image.png') no-repeat center center/cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .info-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 20px;
+        background-color: #333;
+    }
+
+    .info-card {
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .info-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .info-card p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .about-content {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+</style>
+
 <body>
-    
+    <header class="menu">
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/logo brava.png" alt="Brava">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="productos.html">TIENDA</a>
+            <a href="sobreNosotros.html">SOBRE NOSOTROS</a>
+            <a href="reservas.html">RESERVAR</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+        <div class="cart">
+            <a href="carrito.html">
+                <img src="img/Vector.png" alt="Carrito">
+            </a>
+        </div>
+    </header>
+
+    <header class="hero">
+        <h1>BRAVA</h1>
+    </header>
+
+    <section class="info-section">
+        <div class="info-card">
+            <h3>Quiénes Somos</h3>
+            <p>En Brava Pan, hacemos panadería artesanal con ingredientes frescos y locales, fusionando tradición y
+                calidad en cada producto.</p>
+        </div>
+        <div class="info-card">
+            <h3>Nuestro Equipo</h3>
+            <p>Somos un equipo apasionado por la panadería, comprometido en crear productos auténticos con dedicación y
+                esmero.</p>
+        </div>
+        <div class="info-card">
+            <h3>Nuestros Productos</h3>
+            <p>Ofrecemos panes, dulces y más, hechos a mano con ingredientes seleccionados para brindarte lo mejor,
+                tanto en tienda como en línea.</p>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <h2>¡Bienvenido a Brava!</h2>
+        <p>
+            Brava Pan es una panadería artesanal que nació con la misión de rescatar los sabores auténticos, utilizando
+            ingredientes frescos y locales. Desde el primer día, nos hemos dedicado a crear productos que combinan lo
+            mejor de la tradición panadera con un toque de innovación. Lo que comenzó como un pequeño sueño, creció
+            gracias al cariño de nuestros clientes y la pasión que ponemos en cada receta.
+        </p>
+        <p>
+            Detrás de cada pan, croissant o torta, hay un equipo de personas dedicadas, desde los panaderos y el buen
+            horno. Nos inspira la idea de llevar una mesa repleta de productos que alegren el día, así también lo
+            hacemos respetando el proceso artesanal. Nos gusta trabajar no sólo de manera estricta, priorizando la
+            calidad en cada detalle, porque sabemos que en la mesa de cada cliente eso cuenta.
+        </p>
+        <p>
+            En Brava Pan, no sólo queremos que disfrutes de nuestros productos, sino también que te sientas parte de
+            nuestra familia, que regreses con tus amigos y seres queridos. ¡Gracias por confiar en nosotros para ser
+            parte de tus momentos cotidianos y especiales!
+        </p>
+    </section>
+    <footer>
+
+        <div>
+            <a href="home.html">
+                <img src="img/logo brava.png" alt="Brava" class="logo">
+            </a>
+        </div>
+        <div>
+            <p>Pta.Carretas|M a D 8 a 20 h</p>
+            <p> Parque Rodó|M a S 9 a 19 h D 9 a 17</p>
+            <p> Aerop.de Carrasco</p>
+        </div>
+        <div class="social-icons">
+            <img src="img/icono-facebook.png" alt="Facebook">
+            <img src="img/icono-instagram.png" alt="Instagram">
+        </div>
+    </footer>
 </body>
+
 </html>
